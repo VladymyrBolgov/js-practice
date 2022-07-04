@@ -1,25 +1,25 @@
-// let arrTwo = [
-// 	"Коля",
-// 	{
-// 		type: "JS",
-// 		age: 36
-// 	},
-// 	true,
-// 	function () {
-// 		console.log('Привет, я Коля');
-// 	}
-// ];
+ /*let arrTwo = [
+ 	"Коля",
+ 	{
+ 		type: "JS",
+ 		age: 36
+ 	},
+ 	true,
+ 	function () {
+ 		console.log('Привет, я Коля');
+ 	}
+ ];*/
 
-// console.log(arrTwo);
-// console.log(arrTwo[0]);
-// console.log(arrTwo[1].type);
-// console.log(arrTwo[2]);
-// arrTwo[3]();
+ //console.log(arrTwo);
+ //console.log(arrTwo[0]);
+ //console.log(arrTwo[1].type);
+ //console.log(arrTwo[2]);
+ //arrTwo[3]();
 
 
 // Длина массива. Свойство length
 
-// let arrOne = ['Ваня', 'Иштван', 'Оля',];
+ //let arrOne = ['Ваня', 'Иштван', 'Оля',];
 
 // console.log(arrOne);
 // console.log(arrOne.length);
@@ -29,7 +29,7 @@
 // console.log(arrOne.splice(1, 0, 'Игорь'))
 // console.log(arrOne)
 
-// arrOne.length = 0;
+ //arrOne.length = 0;
 // console.log(arrOne);
 
 // Таким образом, самый простой способ
@@ -39,72 +39,72 @@
 // Напомню что массив является объектом и, следовательно,
 // ведёт себя как объект. Например, копируется по ссылке:
 
-// let arr = ['Ваня', 'Иштван', 'Оля',];
+ //let arr = ['Ваня', 'Иштван', 'Оля',];
 // console.log(arr);
 
 // let arrNew = arr;
 
-// arrNew.length = 2;
+ //arrNew.length = 2;
 
 // console.log(arr);
 
 // Метод shift - удаляет элемент в начале,
 // так что второй элемент становится первым.
 
-// let arr = ['Ваня', 'Иштван', 'Оля',];
-// arr.shift();
-// console.log(arr);
+ //let arr = ['Ваня', 'Иштван', 'Оля',];
+ //arr.shift();
+ //console.log(arr);
 
-// arr.unshift('Дима', 'Катя');
-// console.log(arr);
+ //arr.unshift('Дима', 'Катя');
+ //console.log(arr);
 
-// arr.pop();
-// console.log(arr);
+ //arr.pop();
+ //console.log(arr);
 
-// arr.push("Света");
-// console.log(arr);
+ //arr.push("Света");
+ //console.log(arr);
 
 // Метод slice.
 // Cоздаёт новый массив, в который копирует часть либо весь массив
 // Синтаксис arr.slice([start], [end]) Не включая [end]
 
 // Копируем часть массива
-// let arrOne = ['Ваня', 'Иштван', 'Оля',];
+ //let arrOne = ['Ваня', 'Иштван', 'Оля',];
 
-// let arrTwo = arrOne.slice(1, 2);
-// console.log(arrTwo);
+ //let arrTwo = arrOne.slice(1, 2);
+ //console.log(arrTwo);
 
-// let arrThree = arrOne.slice(-2, -1);
-// console.log(arrThree);
+ //let arrThree = arrOne.slice(-2, -1);
+ //console.log(arrThree);
 
-// let arrFour = arrOne.slice();
-// console.log(arrFour);
+ //let arrFour = arrOne.slice();
+ //console.log(arrFour);
 
-// let arr = [
-// 	{ name: 'Вася', age: 36 },
-// 	{ name: 'Коля', age: 18 },
-// 	{ name: 'Оля', age: 'Не скажу' },
-// ]
+ //let arr = [
+ //	{ name: 'Вася', age: 36 },
+ //	{ name: 'Коля', age: 18 },
+ //	{ name: 'Оля', age: 'Не скажу' },
+ //]
 
-// let resultOne = arr.find(function (item, index, array) {
-// 	return item.age === 36;
-// });
+ //let resultOne = arr.find(function (item, index, array) {
+ //	return item.age === 36;
+ //});
 
-// //let resultOne = arr.find(item => item.age === 18);
+//let resultOne = arr.find(item => item.age === 18);
 // console.log(resultOne);
 
 // let results = arr.filter(function (item, index, array) {
 // 	// если true - элемент добавляется к результату, и перебор продолжается
 // 	// возвращается пустой массив в случае, если ничего не найдено
-// });
+ //});
 
 // filter
 // Метод ищет все элементы, на которых функция-колбэк вернёт true.
 
 // let arr = [
 // 	{ name: 'Вася', age: 36 },
-//     { name: 'Коля', age: 18 },
-//     { name: 'Витя', age: 16 },
+//  { name: 'Коля', age: 18 },
+//  { name: 'Витя', age: 16 },
 // 	{ name: 'Оля', age: 'Не скажу' },
 // ]
 // let result = arr.filter(function (item, index, array) {
@@ -127,45 +127,45 @@
 // console.log("5" > "22");
 
 // let arrTwo = [8, 22, 1, 5,];
-// console.log(arrTwo.sort());
+//console.log(arrTwo.sort());
 
 // Функция сортировки
 
-// function compareNumeric(a, b) {
-// 	console.log(`Сравниваем ${a} и ${b}`);
-// 	// if (a > b) return 1;
-// 	// if (a == b) return 0;
-// 	// if (a < b) return -1;
+ //function compareNumeric(a, b) {
+ 	//console.log(`Сравниваем ${a} и ${b}`);
+ 	//if (a > b) return 1;
+ 	// if (a == b) return 0;
+ 	 //if (a < b) return -1;
 
-// 	return a - b
+ 	//return a - b
 // }
 
-// //console.log(arrTwo.sort((a, b) => a - b));
+//console.log(arrTwo.sort((a, b) => a - b));
 
-// console.log(arrTwo.sort(compareNumeric));
+//console.log(arrTwo.sort(compareNumeric));
 
-// let w = 'xfjhsufgsiugd'
-// const x = w;
+ //let w = 'xfjhsufgsiugd'
+ //const x = w;
 // const s = x + 'jfvdfjvbdhfjv'
 
-// w = 'dddd'
+ //w = 'dddd'
 // console.log(w)
 // console.log(x)
 // console.log(s)
 
-// function getCommonElements(array1, array2) {
+ //function getCommonElements(array1, array2) {
 //   // Change code below this line
 
-//    const array = [];
+  //  const array = [];
 
-//    for (let number of array2) {
-//   if (array1.includes(number) )
-//   array.push(number)
+  //  for (let number of array2) {
+  // if (array1.includes(number) )
+  // array.push(number)
 // }
 
-// return array;
+ //return array;
 //  // Change code above this line
-// }
+ //}
 
 // console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]))
 
@@ -178,7 +178,7 @@
 // const eachElementInFirstIsOdd = firstArray.every((number) => number %2 !== 0);
 
 // const eachElementInSecondIsEven = secondArray.every((number) => number %2 === 0);
-// const eachElementInSecondIsOdd = secondArray.every((number) => number %2 !== 0);
+/// const eachElementInSecondIsOdd = secondArray.every((number) => number %2 !== 0);
 
 // const eachElementInThirdIsEven = thirdArray.every((number) => number %2 === 0 );
 // const eachElementInThirdIsOdd = thirdArray.every((number) => number %2 !== 0);
@@ -186,11 +186,11 @@
 // console.log(eachElementInThirdIsEven)
 
 // const students = [
-//   { name: "Mango", score: 83 },
-//   { name: "Poly", score: 59 },
-//   { name: "Ajax", score: 37 },
-//   { name: "Kiwi", score: 94 },
-//   { name: "Houston", score: 64 },
+  // { name: "Mango", score: 83 },
+  // { name: "Poly", score: 59 },
+  // { name: "Ajax", score: 37 },
+  // { name: "Kiwi", score: 94 },
+  // { name: "Houston", score: 64 },
 // ];
 
 // Название аккумулятора может быть произвольным, это просто параметр функции
@@ -198,7 +198,7 @@
 //   return total + student.score;
 // }, 0);
 
-// console.log(totalScore)
+ //console.log(totalScore)
 
 // const players = [
 //   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
@@ -208,7 +208,8 @@
 // ];
 // // Change code below this line
 
-// const totalAveragePlaytimePerGame = players.reduce((totaltime, { playtime, gamesPlayed }) => { return totaltime + playtime / gamesPlayed }, 0)
+// const totalAveragePlaytimePerGame = players.reduce((totaltime, { playtime, gamesPlayed }) =>
+//   { return totaltime + playtime / gamesPlayed }, 0)
 // console.log(totalAveragePlaytimePerGame)
 
 // const books = [
@@ -228,10 +229,10 @@
 //     rating: 7.75,
 //   },
 //   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
-//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+ //  { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
 // ];
 // // Change code below this line
-// console.log(length)
+//// console.log(length)
 
 // const sortedByAuthorName = [...books].sort((firstBook, secondBook) => firstBook.author.localeCompare(secondBook.author));
 
@@ -241,8 +242,8 @@
 //   potions: ["Speed potion", "Dragon breath", "Stone skin"],
 //   removePotion(potionName) {
 //     // Change code below this line
-//       const potionIndex = this.potions.indexOf(potionName);
-//       console.log(potionIndex)
+//      const potionIndex = this.potions.indexOf(potionName);
+ //      console.log(potionIndex)
 // this.potions.splice(potionIndex, 1)
 
 
@@ -470,13 +471,13 @@
 
 //   addPotion(newPotion) {
 //     for (const potion of this.potions) {
-//       if (potion.name === newPotion.name) {
+//      if (potion.name === newPotion.name) {
 //         return `Error! Potion ${newPotion.name} is already in your inventory!`;
 //       } 
       
 //     }
-//     return this.potions.push(newPotion);
-//   },
+//  return this.potions.push(newPotion);
+//},
 
 //   removePotion(potionName) {
 //     for (const potion of this.potions) {
@@ -546,12 +547,12 @@
 // console.log(uniCars)
 
 // let filterCars = array.filter((c, i, a) => a.indexOf(c) === i)
-// let filterNums = nums.filter((c, i, a) => a.indexOf(c) === i)
+ //let filterNums = nums.filter((c, i, a) => a.indexOf(c) === i)
 // console.log(filterCars)
 // console.log(filterNums)
 
 // let uni_cars = Array.from(new Set(array))
-// let uni_nums = Array.from(new Set(nums))
+//let uni_nums = Array.from(new Set(nums))
 // console.log(uni_cars)
 // console.log(uni_nums)
 
@@ -560,4 +561,4 @@
 // const nums = [1, 1, 2, 2, 3, 3, 4, 3, 5, 5, 6, 77, 2, 1, 5, 88, 95]
 
 // const rundom_num = nums[(Math.floor(Math.random() * (nums.length)))]
-// console.log(rundom_num)
+//console.log(rundom_num)
